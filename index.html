@@ -8,7 +8,7 @@ through the code to see what's going on!
 
 Original files:
     /index.html - This page
-    /js/index.js - The interaction behavior for this page
+    /js/index.js - The interaction behaviorfor this page
 
 Third-party libraries (all from asn1.js package):
     /js/asn1js/int10.js - Needed for asn1.js
@@ -168,6 +168,8 @@ Released under MIT License. Enjoy!
 #  Debian: /etc/ssl/openssl.cnf
 #  RHEL and CentOS: /etc/pki/tls/openssl.cnf
 #  Mac OSX: /System/Library/OpenSSL/openssl.cnf
+#  MinGW/MSYS: /var/ssl/openssl.cnf
+#  Cygwin/MSYS2: /usr/ssl/openssl.cnf
 
 openssl req -new -sha256 -key domain.key -subj "/" \
   -reqexts SAN -config &lt;(cat /etc/ssl/openssl.cnf \
